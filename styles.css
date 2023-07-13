@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+
+/*------- HEADER ----------- */
+
+header{
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+}
+
+.header-profile{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-profile img{
+    margin-bottom: 24px;
+    width: 150px;
+    border-radius: 15px;
+}
+
+
+.header-profile-username{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+        .header-profile-name{
+            color: #4E5150;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .header-profile-city{
+            color: #A9A9A9;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+
+
+
+
+
+
+.header-stadistics{
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+                .header-stadistics-posts{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    background-color: #E5E5E5;
+                    border-radius: 5px;
+                    padding: 5px 15px;
+                }
+
+
+                .header-stadistics-posts .stadistic-num{
+                    font-size: 18px;
+                    font-weight: 600;
+
+                }
+
+                .header-stadistics-posts .stadistic-name{
+                    font-size: 14px;
+                }
+
+
+
+                /*------------- GALLERY-----------------*/
+
+.gallery{
+   display: grid;
+   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    width: 100%;
+    
+    
+    gap: 15px;
+}
+
+.gallery-img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0px 0px 6px 0px  rgba(0, 0, 0, 0.629);
+}
+
+
+
+.gallery-item2{ grid-column-start: 2;
+grid-column-end: 4;}
+
+.gallery-item3{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.gallery-item4{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    height: 100%;
+}
+
+.item:hover img{
+   
+    transform:scale(1.04) translateY(-15px);
+}
+
+
+
+
+            
+footer {
+    margin: 10% auto 2% auto;
+    display: flex;
+    justify-content: center;
+    color: #B9BDCF;
+    font-family: var(--font-mont);
+  }
+  
+  footer a {
+    color: #B9BDCF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+@media  screen and (max-width: 600px) {
+
+    body{
+        width: 100%;
+       padding: 0 5%;
+       margin: 0 auto;
+       overflow-x: hidden;
+        
+    }
+
+
+    header .header-profile img{
+        width: 30%;
+    }
+
+    .header-profile-name{
+        font-size: 14px;
+    }
+    .header-profile-city{
+        font-size: 10px;
+    }
+
+
+
+    .header-stadistics{
+        gap: 3.5%;
+    }
+
+    .header-stadistics .stadistic-num{
+        font-size: 12px;
+    }
+    .header-stadistics .stadistic-num{
+        font-size: 12px;
+    }
+
+
+
+  
+      
+    .gallery-img{
+        border-radius: 5px;
+    }
+
+    .gallery-item4{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        align-self: stretch;
+    }
+    
+
+    footer{
+        margin: 30% auto 3% auto;
+        font-size: 12px;
+    }
+
+
+}
